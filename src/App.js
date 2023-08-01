@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { useState } from "react";
 import Logo from "./components/Logo";
 import Form from "./components/Form";
