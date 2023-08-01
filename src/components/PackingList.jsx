@@ -8,11 +8,11 @@ const initialItems = [
 	{ id: 5, description: " T-shert", quantity: 10, packed: false },
 	{ id: 6, description: " Charger", quantity: 1, packed: false },
 ];
-const PackingList = () => {
+const PackingList = ({ items }) => {
 	return (
 		<div className="list">
 			<ul>
-				{initialItems.map((item) => (
+				{items.map((item) => (
 					<Item item={item} key={item.id} />
 				))}
 			</ul>
