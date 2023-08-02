@@ -1,0 +1,15 @@
+<button onClick={onDeleteItem(item.id)}>❌</button>
+<button onClick={()=> onDeleteItem(item.id)}>❌</button>
+The first line of code uses a function call to onDeleteItem(item.id) when the button is clicked.
+This means that the
+onDeleteItem function is executed immediately when the button is rendered, not when it is clicked.
+This can cause
+unintended behavior, such as deleting the item without the user actually clicking the button.
+
+The second line of code uses an arrow function to wrap the onDeleteItem(item.id) function call.
+This means that the
+onDeleteItem function will only be executed when the button is clicked.
+This is the correct way to handle events in
+React, as it ensures that the function is only executed when the event occurs.
+
+Therefore, the second line of code is the recommended approach for handling events in React.
