@@ -6,11 +6,11 @@ import Stats from "./components/Stats";
 import FlashCards from "./components/FlashCards";
 const initialItems = [
 	{ id: 1, description: "Passports", quantity: 2, packed: false },
-	{ id: 2, description: "Socks", quantity: 12, packed: true },
+	{ id: 2, description: "Socks", quantity: 12, packed: false },
 	{ id: 3, description: "Jacket", quantity: 3, packed: false },
-	{ id: 4, description: "Shoes", quantity: 3, packed: true },
-	{ id: 5, description: "T-Shirts", quantity: 10, packed: false },
-	{ id: 6, description: "Charger", quantity: 1, packed: false },
+	// { id: 4, description: "Shoes", quantity: 3, packed: false },
+	// { id: 5, description: "T-Shirts", quantity: 10, packed: false },
+	// { id: 6, description: "Charger", quantity: 1, packed: false },
 ];
 function App() {
 	const [items, setItems] = useState(initialItems);
@@ -38,7 +38,7 @@ function App() {
 				onDeleteItem={handleDeleteItem}
 				onToggleItem={handleToggleItem}
 			/>
-			<Stats />
+			<Stats items={items} />
 			<br></br>
 			<FlashCards />
 			<br></br>
