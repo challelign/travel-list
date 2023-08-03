@@ -89,6 +89,18 @@ input {
 	align-items: center;
 }
 
+.calculator {
+	background-color: #5a3e2b;
+	color: #ffebb3;
+	padding: 1.5rem 0;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 1.2rem;
+	align-items: center;
+}
+
 .actions button,
 .list select {
 	text-transform: uppercase;

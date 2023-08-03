@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import PackingList from "./components/PackingList";
 import Stats from "./components/Stats";
 import FlashCards from "./components/FlashCards";
+import TipCalculator from "./components/calculator/TipCalculator";
 const initialItems = [
 	{ id: 1, description: "Passports", quantity: 2, packed: false },
 	{ id: 2, description: "Socks", quantity: 12, packed: false },
@@ -52,6 +53,8 @@ function App() {
 			<br></br>
 			<FlashCards />
 			<br></br>
+			<TipCalculator />
+			<br></br> <br></br> <br></br> <br></br>
 		</div>
 	);
 }
